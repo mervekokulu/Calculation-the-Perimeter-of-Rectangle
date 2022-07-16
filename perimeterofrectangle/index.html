@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perimeter of Rectangle</title>
+</head>
+<body>
+    <input type="text" id ="edge1" placeholder="Short edge">
+    <input type="text" id="edge2" placeholder ="Long edge">
+    <input type="button" id= "calculate" value="Calculate">
+    <script>
+        function calculate(){
+        var e1=document.getElementById("edge1").value;
+        var e2=document.getElementById("edge2").value;
+
+        e1=Number(e1);
+        e2=Number(e2);
+        var perimeter= (e1+e2)*2
+        alert("Perimeter of rectangle : "+perimeter);
+    }
+
+    var calcBtn=document.getElementById("calculate");
+    calcBtn.onclick=calculate;
+    </script>
+</body>
+</html>
